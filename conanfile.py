@@ -25,9 +25,9 @@ class EspIdfConan(ConanFile):
             self.run(self.source_folder + os.sep + "esp-idf" + os.sep + "export.bat")
         elif(osName == 'Linux' or osName == 'Darwin'): # linux or mac
             print("EXECUTING ESP-IDF/INSTALL BAT IN: " + self.source_folder)
-            self.run("." + os.sep + self.source_folder + os.sep + "esp-idf" + os.sep + "install.sh")
+            self.run("." + self.source_folder + os.sep + "esp-idf" + os.sep + "install.sh")
             print("EXECUTING ESP-IDF/EXPORT BAT IN: " + self.source_folder)
-            self.run("." + os.sep + self.source_folder + os.sep + "esp-idf" + os.sep + "export.sh")
+            self.run("." + self.source_folder + os.sep + "esp-idf" + os.sep + "export.sh")
 
 
         
