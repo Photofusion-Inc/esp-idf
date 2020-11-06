@@ -27,7 +27,7 @@ class EspIdfConan(ConanFile):
             print("EXECUTING ESP-IDF/INSTALL BAT IN: " + self.source_folder)
             self.run(self.source_folder + os.sep + "esp-idf" + os.sep + "." + os.sep + "install.sh")
             print("EXECUTING ESP-IDF/EXPORT BAT IN: " + self.source_folder)
-            self.run(self.source_folder + os.sep + "esp-idf" + os.sep + "." + os.sep + "export.sh")
+            self.run(". " + self.source_folder + os.sep + "esp-idf" + os.sep + "." + os.sep + "export.sh")
 
 
         
